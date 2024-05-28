@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="container">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <div style="padding: 15px;">
+        <nav style="padding: 8px; width: 100%;" class="form-control navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="index.html">Auto Auction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="listCar.html">List A Vehicle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buyCar.html">Buy A Vehicle</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</head>
+
+<body class="container">
+
+    <div class="container" style="border: solid;">
+        <div id="galleryText" class="gallery-wrap container">See Previously Sold Cars!</div>
+            <div class="gallery-wrap">
+                <img src="images\back.png" id="backBtn">
+                    <div class="gallery">
+                        <div>
+                            <span><img src="images\350z.jpg"></span>
+                            <span><img src="images\gtr.jpg"></span>
+                            <span><img src="images\gt3rs.jpg"></span>
+                        </div>
+                        <div>
+                            <span><img src="images\bronco.jpg"></span>
+                            <span><img src="images\rs6.jpg"></span>
+                            <span><img src="images\aventador.jpg"></span>
+                        </div>
+                    </div>
+            <img src="images\next.png" id="nextBtn">
+            </div>
+        </div>
+    </div>
+        <script>
+            let scrollContainer = document.querySelector(".gallery");
+            let backBtn = document.getElementById("backBtn")
+            let nextBtn = document.getElementById("nextBtn")
+
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior = "auto";
+            });
+
+            nextBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 900;
+            });
+
+        backBtn.addEventListener("click", () => {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 900;
+            });
+        </script>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "Cars": [
+        {
+            "id": "0",
+            "make": "Nissan",
+            "model": "Xterra",
+            "year": "2003",
+            "mileage": "194,555",
+            "engine": "3.3L V6",
+            "transmission": "5-Speed Manual",
+            "drivetrain": "4WD",
+            "price": "$6,000"
+        }
+    ]
+}

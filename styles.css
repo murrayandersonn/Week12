@@ -1,0 +1,44 @@
+body {
+    background: rgb(221, 217, 217);
+}
+.gallery {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px; 
+    flex: none;
+}
+.gallery div img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#backBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery div img:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+#galleryText {
+    justify-content: center;
+    margin-top: 10px ;
+    color: black;
+    font-size:x-large;
+
+    
+}
