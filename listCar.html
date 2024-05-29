@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car App</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
 
     <div style="padding: 15px;">
         <nav style="padding: 8px; width: 100%;" class="form-control navbar navbar-expand-sm bg-dark navbar-dark">
@@ -15,15 +16,87 @@
             <li class="nav-item">
                 <a class="nav-link" href="listCar.html">List A Vehicle</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="buyCar.html">Buy A Vehicle</a>
-            </li>
             </ul>
         </nav>
     </div>
 </head>
 
+
+
 <body>
+
+    <form id="listing-form">
+        <label for="make">Make:</label><br>
+        <input type="text" id="make" name="make" placeholder="Nissan"><br><br>
+        
+        <label for="model">Model:</label><br>
+        <input type="text" id="model" name="model" placeholder="Xterra"><br><br>
+        
+        <label for="year">Year:</label><br>
+        <input type="text" id="year" name="year" placeholder="2003"><br><br>
+        
+        <label for="miles">Miles:</label><br>
+        <input type="text" id="miles" name="miles" placeholder="194,555"><br><br>
+        
+        <label for="engine">Engine:</label><br>
+        <input type="text" id="engine" name="engine" placeholder="3.3L V6"><br><br>
+        
+        <label for="transmission">Transmission:</label><br>
+        <input type="text" id="transmission" name="transmission" placeholder="5-Speed Manual"><br><br>
+        
+        <label for="drivetrain">Drivetrain:</label><br>
+        <input type="text" id="drivetrain" name="drivetrain" placeholder="4WD"><br><br>
+        
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price" placeholder="$6,000"><br><br>
+        
+        
+        <input type="submit" placeholder="Submit">
+        <script>
+            const API_URL = 'http://localhost:3000/Cars/';
+            const listingForm = document.querySelector('#listing-form')
+            listingForm.addEventListener('submit', (e) => {
+                e.preventDefault()
+
+                const makeInput = listingForm.querySelector('#make').value
+                const modelInput = listingForm.querySelector('#model').value
+                const yearInput = listingForm.querySelector('#year').value
+                const milesInput = listingForm.querySelector('#miles').value
+                const engineInput = listingForm.querySelector('#engine').value
+                const transmissionInput = listingForm.querySelector('#transmission').value
+                const drivetrainInput = listingForm.querySelector('#drivetrain').value
+                const priceInput = listingForm.querySelector('#price').value
+
+                console.log(makeInput);
+                console.log(modelInput);
+                console.log(yearInput);
+                console.log(milesInput);
+                console.log(engineInput);
+                console.log(transmissionInput);
+                console.log(drivetrainInput);
+                console.log(priceInput);
+
+                fetch(`${API_URL}`, {
+     
+                    method: 'POST',
+                    body: JSON.stringify({
+                        make: makeInput,
+                        model: modelInput,
+                        year: yearInput,
+                        miles: milesInput,
+                        engine: engineInput,
+                        transmission: transmissionInput,
+                        drivetrain: drivetrainInput,
+                        price: priceInput,
+                        image: ' '
+                    }),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                    })
+            })
+        </script>
+    </form>
 
     </div>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>

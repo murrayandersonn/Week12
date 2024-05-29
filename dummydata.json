@@ -1,0 +1,125 @@
+{
+    "Cars": [
+        {
+            "id": "0",
+            "make": "Nissan",
+            "model": "Xterra",
+            "year": "2003",
+            "miles": "194,555",
+            "engine": "3.3L V6",
+            "transmission": "5-Speed Manual",
+            "drivetrain": "4WD",
+            "price": "$6,000",
+            "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWRLBYMK9VHBFFb-VA3b8scQDELr2s4utkt-dq9QM_co661yUQ"
+        },
+        {
+            "id": "1",
+            "make": "Toyota",
+            "model": "Camry",
+            "year": "2010",
+            "miles": "120,000",
+            "engine": "2.5L I4",
+            "transmission": "6-Speed Automatic",
+            "drivetrain": "FWD",
+            "price": "$8,500",
+            "image": "https://example.com/images/toyota_camry.jpg"
+        },
+        {
+            "id": "2",
+            "make": "Honda",
+            "model": "Civic",
+            "year": "2015",
+            "miles": "75,000",
+            "engine": "1.8L I4",
+            "transmission": "CVT",
+            "drivetrain": "FWD",
+            "price": "$10,000",
+            "image": "https://example.com/images/honda_civic.jpg"
+        },
+        {
+            "id": "3",
+            "make": "Ford",
+            "model": "F-150",
+            "year": "2018",
+            "miles": "50,000",
+            "engine": "3.5L V6",
+            "transmission": "10-Speed Automatic",
+            "drivetrain": "4WD",
+            "price": "$25,000",
+            "image": "https://example.com/images/ford_f150.jpg"
+        },
+        {
+            "id": "4",
+            "make": "Chevrolet",
+            "model": "Impala",
+            "year": "2012",
+            "miles": "140,000",
+            "engine": "3.6L V6",
+            "transmission": "6-Speed Automatic",
+            "drivetrain": "FWD",
+            "price": "$7,500",
+            "image": "https://example.com/images/chevrolet_impala.jpg"
+        },
+        {
+            "id": "5",
+            "make": "BMW",
+            "model": "3 Series",
+            "year": "2016",
+            "miles": "60,000",
+            "engine": "2.0L I4 Turbo",
+            "transmission": "8-Speed Automatic",
+            "drivetrain": "RWD",
+            "price": "$20,000",
+            "image": "https://example.com/images/bmw_3series.jpg"
+        },
+        {
+            "id": "6",
+            "make": "Audi",
+            "model": "A4",
+            "year": "2014",
+            "miles": "80,000",
+            "engine": "2.0L I4 Turbo",
+            "transmission": "CVT",
+            "drivetrain": "AWD",
+            "price": "$15,000",
+            "image": "https://example.com/images/audi_a4.jpg"
+        },
+        {
+            "id": "7",
+            "make": "Mercedes-Benz",
+            "model": "C-Class",
+            "year": "2017",
+            "miles": "55,000",
+            "engine": "2.0L I4 Turbo",
+            "transmission": "7-Speed Automatic",
+            "drivetrain": "RWD",
+            "price": "$22,000",
+            "image": "https://example.com/images/mercedes_c_class.jpg"
+        },
+        {
+            "id": "8",
+            "make": "Subaru",
+            "model": "Outback",
+            "year": "2019",
+            "miles": "40,000",
+            "engine": "2.5L H4",
+            "transmission": "CVT",
+            "drivetrain": "4WD",
+            "price": "$24,000",
+            "image": "https://example.com/images/subaru_outback.jpg"
+        },
+        {
+            "id": "9",
+            "make": "Volkswagen",
+            "model": "Jetta",
+            "year": "2020",
+            "miles": "30,000",
+            "engine": "1.4L I4 Turbo",
+            "transmission": "8-Speed Automatic",
+            "drivetrain": "FWD",
+            "price": "$18,000",
+            "image": "https://example.com/images/vw_jetta.jpg"
+        }
+    ]
+    
+}

@@ -16,17 +16,51 @@
                 <li class="nav-item">
                     <a class="nav-link" href="listCar.html">List A Vehicle</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="buyCar.html">Buy A Vehicle</a>
-                </li>
             </ul>
         </nav>
     </div>
 </head>
 
-<body class="container">
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="scripts.js"></script>
 
-    <div class="container" style="border: solid;">
+    <section class="4WD">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>4WD Cars</h2>
+                </div>
+            </div>
+            <div class="row" id="4wd"></div>
+        </div>
+    </section> <br><br><br>
+
+    <section class="FWD">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>FWD Cars</h2>
+                </div>
+            </div>
+            <div class="row" id="fwd"></div>
+        </div>
+    </section> <br><br><br>
+
+    <section class="RWD">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>RWD Cars</h2>
+                </div>
+            </div>
+            <div class="row" id="rwd"></div>
+        </div>
+    </section><br><br><br>
+
+
+    <div class="container">
         <div id="galleryText" class="gallery-wrap container">See Previously Sold Cars!</div>
             <div class="gallery-wrap">
                 <img src="images\back.png" id="backBtn">
@@ -69,9 +103,7 @@
         </script>
 
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="scripts.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 
 </body>
 </html>

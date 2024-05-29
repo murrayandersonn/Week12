@@ -1,15 +1,136 @@
 {
-    "Cars": [
-        {
-            "id": "0",
-            "make": "Nissan",
-            "model": "Xterra",
-            "year": "2003",
-            "mileage": "194,555",
-            "engine": "3.3L V6",
-            "transmission": "5-Speed Manual",
-            "drivetrain": "4WD",
-            "price": "$6,000"
-        }
-    ]
+  "Cars": [
+    {
+      "id": "0",
+      "make": "Nissan",
+      "model": "Xterra",
+      "year": "2003",
+      "miles": "194,555",
+      "engine": "3.3L V6",
+      "transmission": "5-Speed Manual",
+      "drivetrain": "4WD",
+      "price": "$6,000",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWRLBYMK9VHBFFb-VA3b8scQDELr2s4utkt-dq9QM_co661yUQ"
+    },
+    {
+      "id": "1",
+      "make": "Toyota",
+      "model": "Camry",
+      "year": "2010",
+      "miles": "120,000",
+      "engine": "2.5L I4",
+      "transmission": "6-Speed Automatic",
+      "drivetrain": "FWD",
+      "price": "$8,500",
+      "image": "https://media.ed.edmunds-media.com/toyota/camry/2010/oem/2010_toyota_camry_sedan_le_fq_oem_2_1600.jpg"
+    },
+    {
+      "id": "2",
+      "make": "Honda",
+      "model": "Civic",
+      "year": "2015",
+      "miles": "75,000",
+      "engine": "1.8L I4",
+      "transmission": "CVT",
+      "drivetrain": "FWD",
+      "price": "$10,000",
+      "image": "https://www.cars.com/i/large/in/v2/stock_photos/32c9539a-faf0-400b-b246-7d641b9cafed/dd1c9ab7-96ab-4893-a0a4-4b74ef761002.png"
+    },
+    {
+      "id": "3",
+      "make": "Ford",
+      "model": "F-150",
+      "year": "2018",
+      "miles": "50,000",
+      "engine": "3.5L V6",
+      "transmission": "10-Speed Automatic",
+      "drivetrain": "4WD",
+      "price": "$25,000",
+      "image": "https://www.motortrend.com/uploads/sites/11/2017/08/2018-Ford-F-150-front-three-quarter-in-motion-08.jpg"
+    },
+    {
+      "id": "4",
+      "make": "Chevrolet",
+      "model": "Impala",
+      "year": "2012",
+      "miles": "140,000",
+      "engine": "3.6L V6",
+      "transmission": "6-Speed Automatic",
+      "drivetrain": "FWD",
+      "price": "$7,500",
+      "image": "https://images.dealer.com/nctd/11-impala-hero.jpg?impolicy=downsize&w=568"
+    },
+    {
+      "id": "5",
+      "make": "BMW",
+      "model": "3 Series",
+      "year": "2016",
+      "miles": "60,000",
+      "engine": "2.0L I4 Turbo",
+      "transmission": "8-Speed Automatic",
+      "drivetrain": "RWD",
+      "price": "$20,000",
+      "image": "https://images.dealer.com/autodata/us/640/2016/USC60BMC201A0/CAC60BMC202A021001.jpg?impolicy=downsize&w=568"
+    },
+    {
+      "id": "7",
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": "2017",
+      "miles": "55,000",
+      "engine": "2.0L I4 Turbo",
+      "transmission": "7-Speed Automatic",
+      "drivetrain": "RWD",
+      "price": "$22,000",
+      "image": "https://images.hgmsites.net/lrg/2017-mercedes-benz-c-class-c-300-sedan-angular-front-exterior-view_100609885_l.jpg"
+    },
+    {
+      "id": "8",
+      "make": "Subaru",
+      "model": "Outback",
+      "year": "2019",
+      "miles": "40,000",
+      "engine": "2.5L H4",
+      "transmission": "CVT",
+      "drivetrain": "4WD",
+      "price": "$24,000",
+      "image": "https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/ac9aa313-9d77-4d8a-a95a-1e7013998dbf/a81f1781-796c-4250-b767-133c550c05e8.png"
+    },
+    {
+      "id": "9",
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "year": "2020",
+      "miles": "30,000",
+      "engine": "1.4L I4 Turbo",
+      "transmission": "8-Speed Automatic",
+      "drivetrain": "FWD",
+      "price": "$18,000",
+      "image": "https://images.cars.com/cldstatic/wp-content/uploads/volkswagen-jetta-sel-premium-2020-01-angle--blue--exterior--front.jpg"
+    },
+    {
+      "id": "5799",
+      "make": "Nissan",
+      "model": "Frontier",
+      "year": "2005",
+      "miles": "160,000",
+      "engine": "4.0L V6",
+      "transmission": "6-Speed Automatic",
+      "drivetrain": "4WD",
+      "price": "$8,000",
+      "image": "https://file.kelleybluebookimages.com/kbb/base/house/2005/2005-Nissan-Frontier%20Crew%20Cab-FrontSide_NTPUCNS051_505x375.jpg"
+    },
+    {
+      "id": "4af7",
+      "make": "Honda",
+      "model": "Accord",
+      "year": "1999",
+      "miles": "235,000",
+      "engine": "2.3L I4",
+      "transmission": "4-Speed Automatic",
+      "drivetrain": "FWD",
+      "price": "$2,000",
+      "image": " "
+    }
+  ]
 }
