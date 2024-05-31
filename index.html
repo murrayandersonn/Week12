@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
 
+<!--Banner at top-->
     <div style="padding: 15px;">
-        <nav style="padding: 8px; width: 100%;" class="form-control navbar navbar-expand-sm bg-dark navbar-dark">
-            <ul class="navbar-nav">
+        <nav style="padding: 8px; width: 100%;" class="navbar form-control navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav justify-content-center">
                 <li class="nav-item">
                     <a class="navbar-brand" href="index.html">Auto Auction</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="listCar.html">List A Vehicle</a>
                 </li>
             </ul>
         </nav>
     </div>
+    <!--button to take you to listing page-->
+    <div>
+        <div id="list-button">
+            <a href="listCar.html"><button id="listButton" class="btn btn-primary">Create A Listing</button></a>
+            <script>
+
+            </script>
+        </div>
+    </div>
+
 </head>
 
 <body>
@@ -26,40 +34,105 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="scripts.js"></script>
 
-    <section class="4WD">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>4WD Cars</h2>
+    <!--container for 4WD vehicles-->
+    <div id="carContainer">
+        <section class="4WD">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>4WD Cars</h2>
+                    </div>
+                </div>
+                <div class="row" id="4wd"></div>
+            </div>
+        </section> <br><br><br>
+
+    <!--container for FWD cars-->
+        <section class="FWD">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>FWD Cars</h2>
+                    </div>
+                </div>
+                <div class="row" id="fwd"></div>
+            </div>
+        </section> <br><br><br>
+
+    <!--container for RWD cars-->
+        <section class="RWD">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>RWD Cars</h2>
+                    </div>
+                </div>
+                <div class="row" id="rwd"></div>
+            </div>
+        </section><br><br><br>
+
+    <!--hidden form that appears as a pop-up when you click any of the 'edit listing' buttons-->
+        <div class="modal fade" id="editCarModal" tabindex="-1" role="dialog" aria-labelledby="editCarModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editCarModalLabel">Edit Car</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form id="editCarForm">
+                            <input type="hidden" id="editCarId">
+                            <div class="form-group">
+                                <label for="editCarMake">Make</label>
+                                <input type="text" class="form-control" id="editCarMake">
+                            </div>
+                            <div class="form-group">
+                                <label for="editCarModel">Model</label>
+                                <input type="text" class="form-control" id="editCarModel">
+                            </div>
+                            <div class="form-group">
+                                <label for="editCarYear">Year</label>
+                                <input type="text" class="form-control" id="editCarYear">
+                            </div>
+                            <div class="form-group">
+                                <label for="editCarMiles">Miles</label>
+                                <input type="text" class="form-control" id="editCarMiles">
+                            </div>
+                            <div class="form-group">
+                                <label for="editCarEngine">Engine</label>
+                                <input type="text" class="form-control" id="editCarEngine">
+                            </div>
+                            <div class="form-group">
+                                <label for="editCarTransmission">Transmission</label>
+                                <input type="text" class="form-control" id="editCarTransmission">
+                            </div>
+                            <div class="form-group">
+                                <label for="editCarDrivetrain">Drivetrain</label>
+                                <input type="text" class="form-control" id="editCarDrivetrain">
+                            </div>
+                            <div class="form-group">
+                                <label for="editCarPrice">Price</label>
+                                <input type="text" class="form-control" id="editCarPrice">
+                            </div>
+                            <div class="form-group">
+                                <label for="editCarImage">Image Url</label>
+                                <input type="text" class="form-control" id="editCarImage">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="saveEditBtn">Save changes</button>
+                    </div>
                 </div>
             </div>
-            <div class="row" id="4wd"></div>
         </div>
-    </section> <br><br><br>
+    </div>
 
-    <section class="FWD">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>FWD Cars</h2>
-                </div>
-            </div>
-            <div class="row" id="fwd"></div>
-        </div>
-    </section> <br><br><br>
+    
+    
+    
 
-    <section class="RWD">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>RWD Cars</h2>
-                </div>
-            </div>
-            <div class="row" id="rwd"></div>
-        </div>
-    </section><br><br><br>
-
-
+<!--Photo gallery scroller I made for fun-->
     <div class="container">
         <div id="galleryText" class="gallery-wrap container">See Previously Sold Cars!</div>
             <div class="gallery-wrap">

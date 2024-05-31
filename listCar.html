@@ -13,9 +13,6 @@
             <li class="nav-item">
                 <a class="navbar-brand" href="index.html">Auto Auction</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="listCar.html">List A Vehicle</a>
-            </li>
             </ul>
         </nav>
     </div>
@@ -24,83 +21,43 @@
 
 
 <body>
-
-    <form id="listing-form">
-        <label for="make">Make:</label><br>
-        <input type="text" id="make" name="make" placeholder="Nissan"><br><br>
+    <!--form for submitting a new listing. posts to the DB to be constructed into its own card-->
+    <div style="margin: 20px;">
+        <form id="listing-form">
+            <label for="make">Make:</label><br>
+            <input type="text" id="make" name="make"><br><br>
+            
+            <label for="model">Model:</label><br>
+            <input type="text" id="model" name="model"><br><br>
+            
+            <label for="year">Year:</label><br>
+            <input type="text" id="year" name="year"><br><br>
+            
+            <label for="miles">Miles:</label><br>
+            <input type="text" id="miles" name="miles"><br><br>
+            
+            <label for="engine">Engine:</label><br>
+            <input type="text" id="engine" name="engine"><br><br>
+            
+            <label for="transmission">Transmission:</label><br>
+            <input type="text" id="transmission" name="transmission"><br><br>
+            
+            <label for="drivetrain">Drivetrain:</label><br>
+            <input type="text" id="drivetrain" name="drivetrain"><br><br>
+            
+            <label for="price">Price:</label><br>
+            <input type="text" id="price" name="price"><br><br>
+            
+            <label for="image">Image URL:</label><br>
+            <input type="text" id="image" name="image"><br><br>
+            
+            
+            <input type="submit" placeholder="Submit">
         
-        <label for="model">Model:</label><br>
-        <input type="text" id="model" name="model" placeholder="Xterra"><br><br>
-        
-        <label for="year">Year:</label><br>
-        <input type="text" id="year" name="year" placeholder="2003"><br><br>
-        
-        <label for="miles">Miles:</label><br>
-        <input type="text" id="miles" name="miles" placeholder="194,555"><br><br>
-        
-        <label for="engine">Engine:</label><br>
-        <input type="text" id="engine" name="engine" placeholder="3.3L V6"><br><br>
-        
-        <label for="transmission">Transmission:</label><br>
-        <input type="text" id="transmission" name="transmission" placeholder="5-Speed Manual"><br><br>
-        
-        <label for="drivetrain">Drivetrain:</label><br>
-        <input type="text" id="drivetrain" name="drivetrain" placeholder="4WD"><br><br>
-        
-        <label for="price">Price:</label><br>
-        <input type="text" id="price" name="price" placeholder="$6,000"><br><br>
-        
-        
-        <input type="submit" placeholder="Submit">
-        <script>
-            const API_URL = 'http://localhost:3000/Cars/';
-            const listingForm = document.querySelector('#listing-form')
-            listingForm.addEventListener('submit', (e) => {
-                e.preventDefault()
-
-                const makeInput = listingForm.querySelector('#make').value
-                const modelInput = listingForm.querySelector('#model').value
-                const yearInput = listingForm.querySelector('#year').value
-                const milesInput = listingForm.querySelector('#miles').value
-                const engineInput = listingForm.querySelector('#engine').value
-                const transmissionInput = listingForm.querySelector('#transmission').value
-                const drivetrainInput = listingForm.querySelector('#drivetrain').value
-                const priceInput = listingForm.querySelector('#price').value
-
-                console.log(makeInput);
-                console.log(modelInput);
-                console.log(yearInput);
-                console.log(milesInput);
-                console.log(engineInput);
-                console.log(transmissionInput);
-                console.log(drivetrainInput);
-                console.log(priceInput);
-
-                fetch(`${API_URL}`, {
-     
-                    method: 'POST',
-                    body: JSON.stringify({
-                        make: makeInput,
-                        model: modelInput,
-                        year: yearInput,
-                        miles: milesInput,
-                        engine: engineInput,
-                        transmission: transmissionInput,
-                        drivetrain: drivetrainInput,
-                        price: priceInput,
-                        image: ' '
-                    }),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                    })
-            })
-        </script>
-    </form>
-
+        </form>
     </div>
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="scripts.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

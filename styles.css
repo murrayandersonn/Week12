@@ -23,6 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 
 }
 #backBtn, #nextBtn {
@@ -43,3 +44,13 @@ body {
 .menu-item {
     margin-top: 25px;
 }
+#list-button {
+    margin: 20px;
+    padding: 20px;
+    border: blue solid;
+    display: inline-block;
+}
+#listButton {
+    font-size: large;
+}
+
